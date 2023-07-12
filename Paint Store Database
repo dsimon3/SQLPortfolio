@@ -1,0 +1,21 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, Medium TEXT, Brand TEXT, Color TEXT, Aisle INTEGER, Price INTEGER);
+
+INSERT INTO store VALUES (1, "Oil", "Gamblin", "Yellow Ochre", "12", "6");
+INSERT INTO store VALUES (2, "Oil", "Windsor & Newton", "French Ultramarine", "11","7");
+INSERT INTO store VALUES (3, "Watercolor", "Arteza", "Burnt Sienna","8", "6");
+INSERT INTO store VALUES (4, "Gouache", "Holbein Acryla", "Cobalt Blue", "13","4");
+INSERT INTO store VALUES (5, "Goache", "HIMI", "Mahoghany", "14", "5");
+INSERT INTO store VALUES (6, "Watercolor", "Arteza", "Lemon Yellow", "8","6");
+INSERT INTO store VALUES (7, "Oil", "Gamblin", "Magenta", "14", "6");
+INSERT INTO store VALUES (8, "Watercolor", "Windsor & Newton", "Mauve", "9","6");
+INSERT INTO store VALUES (9, "Watercolor", "Arteza", "Prussian Blue","9", "7");
+INSERT INTO store VALUES (10, "Gouache", "Holbein Acryla", "Cobalt Blue", "13","4");
+INSERT INTO store VALUES (11, "Oil", "HIMI", "Sap Green", "12", "4");
+INSERT INTO store VALUES (12, "Oil", "Arteza", "Titanium White", "11","6");
+INSERT INTO store VALUES (13, "Oil", "Gamblin", "Ivory Black", "12", "6");
+INSERT INTO store VALUES (14, "Goache", "Holbein Acryla", "Umber", "14","7");
+INSERT INTO store VALUES (15, "Watercolor", "Arteza", "Sepia","8", "6");
+
+SELECT * FROM store ORDER BY Aisle;
+SELECT SUM(price) FROM store;
+SELECT * FROM store WHERE Price < 6 ORDER BY aisle; 
